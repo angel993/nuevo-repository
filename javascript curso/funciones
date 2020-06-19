@@ -1,0 +1,53 @@
+//funcion estructura
+function saludo(nombre){
+    document.write("bienvenido " + nombre);
+    saludo( "eriangel");
+
+    function suma(numero1, numero2){
+        var numero1 = numero1;
+        var numero2 = numero2;
+        document.write( numero1 + numero2)
+        return numero1 + numero2
+        suma( 20,30);
+    }
+    document.write(suma(20,30));
+
+
+
+//ciclo for
+        for( i = 0; i <= 10; i++)
+        
+        var dias = [ "lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
+
+      
+for( i = 0; i <= dias.length - 1; i++){
+    document.write(dias [i] + "<br>");
+}
+
+function resultado( numero){
+    if(numero == null)
+ console.log("valor nulo");
+} else 
+console.log("valor no es nulo");
+resultado(1)
+
+<script>
+        function reloj (){
+            var fecha = new Date();
+            var horas = fecha.getHours();
+            var minutos = fecha.getMinutes();
+            var segundos = fecha.getSeconds();
+            var resultado = horas + ":" + minutos + ":" + segundos;
+            document.getElementById("rel").value=resultado;
+            console.log(resultado);
+        };
+        setInterval(reloj,1000);
+    </script></head>
+
+</head>
+<body>
+<input type="text" id="rel"/>
+</body>
+</html>
+
+
